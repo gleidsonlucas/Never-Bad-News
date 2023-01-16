@@ -4,7 +4,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 :root{
     --cor1: #3A558C;
     --cor2: #5D75A6;
@@ -18,7 +17,7 @@ body{
 }
 header{
     background-color: var(--cor1);
-    height: 100px;
+    max-height: 150px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;
@@ -28,16 +27,27 @@ header{
 header > h1{
     text-align: center;
     padding-bottom: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.849);
+    font-weight: 400;
 }
-
+ main  h2{
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
+    font-family: serif;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.322);
+    font-weight: 400;
+}
 header  a{
     text-decoration: none;
     color: var(--cor4);
     padding-right: 20px;
     font-weight: bold;
     padding-left: 5px;
-    
 }
 
 header > nav > a:hover{
@@ -47,6 +57,9 @@ header > nav > a:hover{
     text-decoration: underline;
     transition: 0.5s;
 }
+header > nav > a:active{
+    color: darkblue;
+}
 
 main {
     max-width: 800px;
@@ -55,15 +68,9 @@ main {
     margin: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
+    box-shadow: -4px -2px 4px rgba(0, 0, 0, 0.233);
 }
 
-main > h2 {
-    color: darkblue;
-    text-align: center;
-    padding-bottom: 30px;
-    
-}
 
 main > article> p{
     font-family: Arial, Helvetica, sans-serif;
@@ -84,11 +91,10 @@ img{
 footer{
     background-color: var(--cor1);
     color: white;
-    padding: 25px;
-    margin-top: 80px;
-    height: 35px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 0px;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 20px;
 }
@@ -99,5 +105,5 @@ footer  a{
 
 }
 footer a::after{
-   content: '\00A0\00A0\01F517';
+   content: '\01F517';
 }
